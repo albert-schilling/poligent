@@ -37,6 +37,30 @@
       "skillPath": "skills/engineering/domain-modeling/SKILL.md",
       "computedHash": "b3eb40152b81f0c98fd2095a023c019452dbdce56f7540cc67fece2972db8369"
     },
+    "factory": {
+      "source": "albert-schilling/skills",
+      "sourceType": "github",
+      "skillPath": "skills/factory/SKILL.md",
+      "computedHash": "6dc800fa63761721e075783c30d4c6efeefc189c600a8cba7e54d0718235290d"
+    },
+    "factory-pull-request": {
+      "source": "albert-schilling/skills",
+      "sourceType": "github",
+      "skillPath": "skills/factory-pull-request/SKILL.md",
+      "computedHash": "7b7c57253e30b28e1372b9f84d2620f5063f39fa28a2a33bb8b804b2fe467700"
+    },
+    "factory-result": {
+      "source": "albert-schilling/skills",
+      "sourceType": "github",
+      "skillPath": "skills/factory-result/SKILL.md",
+      "computedHash": "323e3d8b9669667d3ed7c0e61e6d69e03333d3a2124438dc253415a96fbeaae4"
+    },
+    "factory-setup": {
+      "source": "albert-schilling/skills",
+      "sourceType": "github",
+      "skillPath": "skills/factory-setup/SKILL.md",
+      "computedHash": "74a8429d8de9953223d2b3d296b7384370d8718ce2e426faf2eeb0bf6d3d5d3d"
+    },
     "git-guardrails-claude-code": {
       "source": "mattpocock/skills",
       "sourceType": "github",
