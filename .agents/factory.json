@@ -1,0 +1,58 @@
+{
+  "$schema": "skills/factory/factory.schema.json",
+  "codingAgent": "claude-code",
+  "conventions": "AGENTS.md",
+  "glossary": "GLOSSARY.md",
+  "decisionRecords": ["docs/adr/", "PROJECT_BRIEF.md"],
+  "issueTemplate": ".github/ISSUE_TEMPLATE/task.md",
+  "setup": "",
+  "validate": "./scripts/validate.sh",
+  "maxChangedLines": 300,
+  "harnessLog": "docs/harness-log.md",
+  "labels": {
+    "ready": "ready-for-agent",
+    "needsInfo": "needs-info",
+    "friction": "friction",
+    "preExisting": "pre-existing"
+  },
+  "testFiles": [
+    "**/src/test/**",
+    "**/*.spec.ts",
+    "**/*.test.ts",
+    "**/__snapshots__/**",
+    "**/vitest.config.ts",
+    "**/vitest.setup.ts",
+    "eval/**/cases/**",
+    "eval/**/*.jsonl"
+  ],
+  "riskTiers": [
+    {
+      "tier": "high",
+      "paths": [
+        ".github/workflows/**",
+        ".agents/**",
+        ".claude/**",
+        "scripts/validate.sh",
+        "docker-compose*.yml",
+        "compose*.yml",
+        "**/src/main/resources/db/migration/**",
+        "**/src/main/resources/prompts/**",
+        "**/*Prompt*",
+        "**/*prompt*",
+        "**/*Profile*",
+        "**/*profile*",
+        "**/*Langfuse*",
+        "**/*langfuse*",
+        "**/*telemetry*",
+        "**/application.properties",
+        "**/application*.yaml",
+        "**/application*.yml"
+      ]
+    },
+    {
+      "tier": "low",
+      "paths": ["docs/**", "**/*.md", ".github/ISSUE_TEMPLATE/**", "**/src/test/**", "**/*.spec.ts", "**/*.test.ts"]
+    },
+    { "tier": "medium", "paths": ["**"] }
+  ]
+}
